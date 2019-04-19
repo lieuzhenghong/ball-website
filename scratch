@@ -1,0 +1,33 @@
+
+	    <!---
+
+	    <div class='carousel-wrapper'>
+		<button onclick="carousel_move('food-carousel', -1)"> 
+		    Prev 
+		</button>
+		<div class='carousel' id = 'food-carousel'>
+		    <div class="carousel-item-active fade">
+			<img src="img/test-images/1.jpg"></img>
+		    </div>
+		    <div class="carousel-item fade">
+			<img src="img/test-images/2.jpg"></img>
+		    </div>
+		    <div class="carousel-item fade">
+			<img src="img/test-images/3.jpg"></img>
+		    </div>
+		</div>
+		<button onclick="carousel_move('food-carousel', 1)">
+		    Next
+		</button>
+	    </div>
+
+		<div>
+		    <img src="img/test-images/1.jpg"></img>
+		</div>
+		<div>
+		    <img src="img/test-images/2.jpg"></img>
+		</div>
+		<div>
+		    <img src="img/test-images/3.jpg"></img>
+		</div>
+	    -->

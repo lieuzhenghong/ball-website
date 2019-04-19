@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* stuff for the splash page */
+
+.head {
+    grid-area: header;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.splash-bg {
+    grid-area: splash-bg;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo b {
+    font-size: 2em;
+}
+
+
+.splash {
+    height: 100vh;
+    display: grid;
+    grid-row-gap: 1em;
+    grid-template-areas:
+	"header"
+	"splash-bg";
+    grid-template-rows: 150px auto;
+}
+
+.splash-bg {
+    background-image: url(img/star_bg-min.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Fix background image in the viewport
+       so it doesn't move when the content's
+       height is greater than the image's height */
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+}
+
+/* stuff for the content pages */
+
+.page-head {
+    grid-area: page-head;
+}
+
+.content {
+    max-width: 100%;
+    grid-area: content;
+}
+
+.page {
+    display: grid;
+    grid-template-areas:
+	"page-head"
+	"content";
+    grid-row-gap: 1em;
+}
+
+/* media query for landscape/desktop */
+
+@media (min-width: 500px) {
+    .nav {
+	column-count: 2;
+    }
+    .splash {
+	grid-template-columns: repeat(6, [col-start] 1fr);
+	grid-template-rows: 3fr 1fr;
+	grid-template-areas:
+	    ". splash-bg splash-bg splash-bg splash-bg splash-bg"
+	    "header header header header header header";
+    }
+    .page {
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+	    "page-head	content"
+	    ".		content";
+    }
+}
+
+.owl_carousel {
+    max-width: 100%;
+}
+
+.owl_carousel > div img {
+    max-height: 100px;
+}
