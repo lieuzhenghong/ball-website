@@ -22,8 +22,16 @@
 }
 
 .splash-bg {
+	display: grid;
+	flex-wrap: wrap;
     grid-area: splash-bg;
 }
+
+.splash-bg img {
+	transform: rotate(90deg);
+}
+
+.splash_bg 
 
 .logo {
     text-align: center;

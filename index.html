@@ -25,7 +25,10 @@
 		</ul>
 	    </nav>
 	</header>
-	<div class="splash-bg"></div>
+	<div class="splash-bg">
+		<img src="img/chapel.svg" />
+		<div> <h1> BLACK TIE </h1> </div>
+	</div>
     </div>
 
     <div class="page" id="food-and-drink">
@@ -87,31 +90,19 @@
 
 <script>
     $(document).ready(function(){
-      $(".owl-carousel").owlCarousel();
-      console.log("hello");
+		$(".owl-carousel").owlCarousel({
+			items: 2,
+			margin: 10,
+			responsiveClass:true,
+			responsive:{
+				0: {
+					items:1
+				},
+				500: {
+					items: 2
+				}
+			}
+		});
+		console.log("owl carousel running");
     });
-
-    function carousel_move(carousel_id, dir) {
-	let car = document.getElementById(carousel_id);
-	cs = car.children;
-	console.log(cs);
-	let i = 0;
-	for (let c of cs) {
-	    console.log(c);
-	    console.log(c.className)
-	    if (c.className.includes('active')) {
-		console.log(i);
-		break;
-	    }
-	    i++;
-	}
-	console.log(`Element at index ${i}`);
-	cs[i].className = 'carousel-item fade';
-	if (dir > 0) {
-	    cs[Math.min(i+dir, cs.length-1)].className = 'carousel-item-active fade';
-	}
-	else {
-	    cs[Math.max(i+dir, 0)].className = 'carousel-item-active fade';
-	}
-    }
 </script>
