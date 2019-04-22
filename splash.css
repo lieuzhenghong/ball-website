@@ -63,6 +63,10 @@
 }
 
 .content {
+	/* The min-width property is necessary for
+	 * Owl Carousel 2 not to overflow: see
+	 * https://stackoverflow.com/questions/54301170/owl-carousel-2-not-working-when-css-grid-is-applied */
+	min-width: 100%; 
     max-width: 100%;
     grid-area: content;
 }
@@ -92,14 +96,7 @@
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas:
 	    "page-head	content"
-	    ".		content";
+	    ".	content";
     }
 }
 
-.owl_carousel {
-    max-width: 100%;
-}
-
-.owl_carousel > div img {
-    max-height: 100px;
-}
