@@ -6,34 +6,47 @@
 <link rel="stylesheet" href="owl-carousel/dist/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="owl-carousel/dist/assets/owl.theme.default.min.css">
 <link rel="stylesheet" type="text/css" href="splash.css">
+<link rel="stylesheet" href="https://use.typekit.net/wwm8psx.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 <div class="wrapper">
     <div class="splash">
 	<header class="head">
 	    <div class="logo">
-		<b>MERTON</b> <br>
-		WINTER BALL
+			<div><b>MERTON</b><br/>
+			WINTER BALL</div>
 	    </div>
-	    <nav class="nav">
-		<ul>
-		    <li><a href="#food-and-drink">Food and Drink</a></li>
-		    <li><a href="#our-sponsors">Formal Dining</a></li>
-		    <li><a href="">Music</a></li>
-		    <li><a href="">Sponsors</a></li>
-		    <li><a href="">Ticketing</a></li>
-		    <li><a href="">Thrills</a></li>
-		</ul>
+		<div class ="toggle">
+		  <a href="#main-menu"
+			 onclick="toggleMenu()"
+			 id="main-menu-toggle"
+			 class="menu-toggle"
+			 aria-label="Open main menu">
+			<span class="sr-only">Open main menu</span>
+			<span class="fa fa-bars" aria-hidden="true"></span>
+		  </a>
+		</div>
+	    <nav class="nav" id="navbar">
+			<ul id="navbar2">
+				<li><a href="#food-and-drink">Food and Drink</a></li>
+				<li><a href="#our-sponsors">Formal Dining</a></li>
+				<li><a href="">Music</a></li>
+				<li><a href="">Sponsors</a></li>
+				<li><a href="">Ticketing</a></li>
+				<li><a href="">Thrills</a></li>
+			</ul>
 	    </nav>
 	</header>
 	<div class="splash-bg">
 		<img src="img/chapel.svg" />
-		<div> <h1> BLACK TIE </h1> </div>
 	</div>
     </div>
 
+	<div class="page-wrapper">
     <div class="page" id="food-and-drink">
 	<header class="page-head">
-	    <h1>FOOD AND DRINK</h1>
+		<h1>Food <br> and <br> Drink </h1>
 	</header>
 	<div class="content">
 	    <h2> The best food you can hope for </h2>
@@ -68,16 +81,61 @@
 	    </div>
 	</div>
     </div>
+
+	<div class="page" id="formal-dining">
+		<header class="page-head">
+			<h1>Formal <br> Dining</h1>
+		</header>
+		<div class="content">
+	    <h2> Very posh food </h2>
+		<p>
+		Vel quam elementum pulvinar etiam non quam. Justo eget magna fermentum iaculis eu. Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Cursus euismod quis viverra nibh cras pulvinar. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Eget gravida cum sociis natoque penatibus et magnis dis. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. </p>
+
+		</div>
+	</div>
+
+	<div class="page" id="music">
+		<header class="page-head">
+			<h1>Music</h1>
+		</header>
+		<div class="content">
+			<h2> Notes played quickly in succession </h2>
+			<p> Pellentesque nec nam aliquam sem et tortor consequat. Nullam non nisi est sit amet facilisis magna etiam tempor. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada. Vulputate dignissim suspendisse in est ante in. Eu non diam phasellus vestibulum lorem sed. Fringilla ut morbi tincidunt augue. Eu turpis egestas pretium aenean. Metus aliquam eleifend mi in nulla posuere sollicitudin. </p>
+		</div>
+	</div>
     
     <div class="page" id="our-sponsors">
 	<header class="page-head">
-	    <h1>OUR SPONSORS</h1>
+		<h1>Our <br> Sponsors</h1>
 	</header>
 	<div class="content">
-	    <h2> The best food you can hope for </h2>
-		<p> Vehicula ipsum a arcu cursus. Etiam erat velit scelerisque in dictum non. Accumsan tortor posuere ac ut consequat semper. A pellentesque sit amet porttitor eget. Viverra ipsum nunc aliquet bibendum enim facilisis gravida. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Velit dignissim sodales ut eu sem. In hendrerit gravida rutrum quisque non tellus. Lacus luctus accumsan tortor posuere ac ut consequat. Turpis massa sed elementum tempus egestas sed sed risus. Ut porttitor leo a diam sollicitudin tempor id eu. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a. Amet consectetur adipiscing elit pellentesque habitant. A pellentesque sit amet porttitor. Vitae nunc sed velit dignissim sodales ut eu. Accumsan in nisl nisi scelerisque eu ultrices. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Purus in mollis nunc sed id semper risus. Vulputate sapien nec sagittis aliquam. Integer vitae justo eget magna fermentum iaculis eu non diam. </p>
+	    <h2> People giving us money </h2>
+		<p> vehicula ipsum a arcu cursus. etiam erat velit scelerisque in dictum non. accumsan tortor posuere ac ut consequat semper. a pellentesque sit amet porttitor eget. viverra ipsum nunc aliquet bibendum enim facilisis gravida. commodo odio aenean sed adipiscing diam donec adipiscing tristique. velit dignissim sodales ut eu sem. in hendrerit gravida rutrum quisque non tellus. lacus luctus accumsan tortor posuere ac ut consequat. </p>
 	</div>
     </div>
+
+	<div class="page" id="ticketing">
+		<header class="page-head">
+			<h1>Ticketing</h1>
+		</header>
+		<div class="content">
+			<script src="https://web-cdn.fixr.co/scripts/fixr-shop-widget.v1.min.js" data-fixr-shop-id="cdccb2cb-848e-4a9e-a84a-a4aca52c86e4" data-fixr-theme="light"></script>		
+		</div>
+	</div>
+
+	<div class="page" id="thrills">
+		<header class="page-head">
+			<h1>Thrills</h1>
+		</header>
+		<div class="content">
+	    <h2> Fun carnival rides for all </h2>
+			<p> Vehicula ipsum a arcu cursus. Etiam erat velit scelerisque in dictum non. Accumsan tortor posuere ac ut consequat semper. A pellentesque sit amet porttitor eget. Viverra ipsum nunc aliquet bibendum enim facilisis gravida. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Velit dignissim sodales ut eu sem. In hendrerit gravida rutrum quisque non tellus. Lacus luctus accumsan tortor posuere ac ut consequat. </p>
+		</div>
+		</div>
+	</div>
+
+	</div>
+
 </div>
 
 
@@ -106,3 +164,17 @@
 		console.log("owl carousel running");
     });
 </script>
+
+<script>
+	function toggleMenu() {
+		var e = document.getElementById("navbar");
+		if (e.style.display == "block") {
+			e.style.display = "none";
+		}
+		else {
+			e.style.display = "block";
+		}
+	}
+</script>
+
+		
