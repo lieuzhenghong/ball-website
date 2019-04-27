@@ -1,4 +1,4 @@
-/* General style */
+80/* General style */
  
 * {
     padding: 0;
@@ -135,19 +135,6 @@ h2 {
 	color: black;
 }
 
-.splash-bg {
-	grid-area: splash-bg;
-	display: grid;
-	align-items: center;
-	justify-items: center;
-}
-
-.splash-bg > img {
-	max-width: 90%;
-	max-height: 90%;
-	object-fit: scale-down;
-}
-
 .logo {
     text-align: justify;
 	font-family: "Ivymode";
@@ -172,16 +159,28 @@ h2 {
 }
 
 .splash-bg {
+	/*max-height: 80vh; */
+	grid-area: splash-bg;
+	display: grid;
+	align-items: center;
+	justify-items: center;
     background-image: url(img/star_bg-min.png);
     background-position: center center;
     background-repeat: no-repeat;
     /* Fix background image in the viewport
        so it doesn't move when the content's
        height is greater than the image's height */
-    background-attachment: fixed;
+    /*background-attachment: fixed; */
     background-size: cover;
     background-color: black;
 }
+
+.splash-bg > img {
+	max-width: 90%;
+	max-height: 90%;
+	object-fit: scale-down;
+}
+
 
 /* stuff for the content pages */
 
