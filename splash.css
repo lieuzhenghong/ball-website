@@ -1,3 +1,5 @@
+/* General style */
+ 
 * {
     padding: 0;
     margin: 0;
@@ -25,6 +27,69 @@ h2 {
     margin-right: 5%;
 }
 
+/* Sidebar nav */
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 9;
+	top:0;
+	right:0;
+	background-color: rgba(80,80,80,0.99);
+	overflow-x: hidden;
+	transition: 0.1s;
+}
+
+.sidenav > div {
+	margin-right: 1.5rem;
+	margin-top: 1.5rem;
+	text-align: right;
+}
+
+.sidenav .close_button {
+	font-size: 72px;
+	text-decoration: none;
+	color: rgba(220,220,220,1);
+}
+
+.sidenav .close_button:hover {
+	color: white;
+}
+
+.sidenav ul {
+	font-family: "Open Sans", sans-serif;
+	/*
+	font-family: "Ivymode";
+	font-style: italic;
+	font-variant: small-caps;
+	*/
+}
+
+.sidenav ul li {
+	margin-left: 0.5rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.sidenav ul li {
+	margin-left: 0.5rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.sidenav ul li a {
+	color: rgba(220,220,220,1);
+    list-style: none;
+	line-height: 2rem;
+	font-size: 1.3rem;
+	text-decoration: none;
+}
+
+.sidenav ul li a:hover {
+	color: white;
+	text-shadow: 1px 3px rgba(50, 50, 50, 1);
+}
 
 /* stuff for the splash page */
 
@@ -33,8 +98,7 @@ h2 {
     display: grid;
 	grid-template-columns: 5fr 2fr;
 	grid-template-areas: 
-	"logo button"
-	"nav nav";
+	"logo button";
 	padding-top: 20px;
 }
 
@@ -63,6 +127,7 @@ h2 {
 }
 
 .nav ul li a {
+	font-size: 1.3rem;
 	text-decoration: none;
 	color: rgba(80, 80, 80, 1);
 }
@@ -102,7 +167,7 @@ h2 {
     grid-template-areas:
 	"header"
 	"splash-bg";
-    grid-template-rows: 150px auto;
+    grid-template-rows: 75px auto;
 	margin-bottom: 10vh;
 }
 

@@ -9,6 +9,19 @@
 <link rel="stylesheet" href="https://use.typekit.net/wwm8psx.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<nav class="sidenav" id="sidenav">
+	<div>
+		<a href="#" class="close_button" onclick="closeNav()">&times;</a>
+	</div>
+	<ul>
+		<li><a href="#food-and-drink">Food and Drink</a></li>
+		<li><a href="#formal-dining">Formal Dining</a></li>
+		<li><a href="#music">Music</a></li>
+		<li><a href="#our-sponsors">Sponsors</a></li>
+		<li><a href="#ticketing">Ticketing</a></li>
+		<li><a href="#thrills">Thrills</a></li>
+	</ul>
+</nav>
 
 <div class="wrapper">
     <div class="splash">
@@ -19,7 +32,7 @@
 	    </div>
 		<div class ="toggle">
 		  <a href="#main-menu"
-			 onclick="toggleMenu()"
+			 onclick="openNav()"
 			 id="main-menu-toggle"
 			 class="menu-toggle"
 			 aria-label="Open main menu">
@@ -174,6 +187,12 @@
 		else {
 			e.style.display = "block";
 		}
+	}
+	function openNav() {
+		document.getElementById("sidenav").style.width="200px";
+	}
+	function closeNav() {
+		document.getElementById("sidenav").style.width="0";
 	}
 </script>
 
