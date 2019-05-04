@@ -3,3 +3,6 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/mertball/public_html/
     - /bin/cp -R img $DEPLOYPATH
+    - /bin/cp -R owl-carousel $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp splash.css $DEPLOYPATH
