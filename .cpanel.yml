@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/mertball/public_html/
+    - /bin/cp -R /home/mertball/repositories/ball-website/img $DEPLOYPATH
