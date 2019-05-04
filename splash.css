@@ -179,9 +179,9 @@ h2 {
 }
 
 .splash-bg > img {
-	max-width: 90%;
-	max-height: 90%;
-	object-fit: scale-down;
+	max-width: 80%;
+	max-height: 80%;
+	object-fit: contain;
 }
 
 #detail-page .details {
