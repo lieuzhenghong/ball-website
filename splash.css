@@ -5,9 +5,14 @@
     margin: 0;
 }
 
+p {
+	margin-bottom: 2rem;
+	font-size: 1.3em;
+	line-height: 2em;
+}
+
 body {
 	font-family: "Open Sans", sans-serif;
-	line-height: 1.5rem;
 }
 
 h1 {
@@ -23,8 +28,8 @@ h2 {
 }
 
 .wrapper {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 8vw;
+    margin-right: 8vw;
 }
 
 /* Sidebar nav */
@@ -99,7 +104,6 @@ h2 {
 	grid-template-columns: 5fr 2fr;
 	grid-template-areas: 
 	"logo button";
-	padding-top: 20px;
 }
 
 .toggle {
@@ -181,6 +185,12 @@ h2 {
 	object-fit: scale-down;
 }
 
+#detail-page .details {
+	font-style: normal;
+	text-align: center;
+	font-family:"Ivymode";
+	font-size:3rem;
+}
 
 /* stuff for the content pages */
 
@@ -188,7 +198,6 @@ h2 {
 	display: flex;
     grid-area: page-head;
 	font-family: "Ivymode";
-	min-height: 100px;
 	align-items: center;
 }
 
@@ -212,7 +221,17 @@ h2 {
     grid-template-areas:
 	"page-head"
 	"content";
-    grid-row-gap: 1em;
+    grid-row-gap: 1.5em;
+}
+
+.committee-list h3 {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.committee-list li {
+	line-height: 2em;
+	list-style: none;
 }
 
 /* media query for landscape/desktop */
@@ -258,7 +277,6 @@ h2 {
 		font-size: 6vw;
 	}
 	.nav ul li{
-		font-size: 3vw;
 		line-height: 3.5vw;
 	}
 }
@@ -282,7 +300,6 @@ h2 {
 		font-size: 6vw;
 	}
 	.nav ul li{
-		font-size: 2vw;
 		line-height: 3vw;
 	}
 }
@@ -300,7 +317,6 @@ h2 {
 		font-size: 5vw;
 	}
 	.nav ul li{
-		font-size: 1.6vw;
 		line-height: 3vw;
 	}
 }
