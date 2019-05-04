@@ -7,7 +7,7 @@
 
 p {
 	margin-bottom: 2rem;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	line-height: 2em;
 }
 
@@ -47,8 +47,7 @@ h2 {
 }
 
 .sidenav > div {
-	margin-right: 1.5rem;
-	margin-top: 1.5rem;
+	margin-right: 2rem;
 	text-align: right;
 }
 
@@ -159,7 +158,7 @@ h2 {
 	"header"
 	"splash-bg";
     grid-template-rows: 75px auto;
-	margin-bottom: 10vh;
+	margin-bottom: 4vh;
 }
 
 .splash-bg {
@@ -213,7 +212,8 @@ h2 {
 
 .page-wrapper {
 	display: grid;
-	grid-row-gap: 10vh;
+	grid-row-gap: 16vh;
+	margin-block-end: 15vh;
 }
 
 .page {
@@ -277,7 +277,7 @@ h2 {
 		font-size: 6vw;
 	}
 	.nav ul li{
-		line-height: 3.5vw;
+		line-height: 2.9vw;
 	}
 }
 
@@ -295,12 +295,10 @@ h2 {
 	.logo {
 		font-size: 5vw;
 		line-height: 5vw;
+		margin-block-start: 0.5vw;
 	}
 	.logo b {
 		font-size: 6vw;
-	}
-	.nav ul li{
-		line-height: 3vw;
 	}
 }
 
@@ -315,8 +313,5 @@ h2 {
 	}
 	.logo b {
 		font-size: 5vw;
-	}
-	.nav ul li{
-		line-height: 3vw;
 	}
 }
